@@ -6,6 +6,7 @@ public class Rock {
 		Scanner sc = new Scanner(System.in);
 		while(true) {
 			System.out.print("1:가위 2:바위 3:보 하나를 적으시오" + "\n" + "유저는   : ");
+			System.out.println();
 			int user = sc.nextInt(); //유저가 숫자 하나를 적는다
 			double d = Math.random()*2+1;
 			int computer = (int)Math.round(d); //컴퓨터는 무작위로 1,2,3을 뽑아낸다
@@ -19,8 +20,7 @@ public class Rock {
 			if(sum == 2)
 				System.out.println("컴퓨터는 : " + computer + "\n" +"컴퓨터가이겼습니다");
 			if(sum == -2)
-				System.out.println("컴퓨터는 : " + computer + "\n" +"유저가이겼습니다");
-					
+				System.out.println("컴퓨터는 : " + computer + "\n" +"유저가이겼습니다");	
 		}
 	}
 }
